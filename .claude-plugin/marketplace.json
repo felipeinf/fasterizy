@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "fasterizy",
+  "description": "Speed up work with Claude Code in planning, discussion, and docs. Same technical accuracy. Code unchanged.",
+  "owner": {
+    "name": "felipeinf",
+    "url": "https://github.com/felipeinf"
+  },
+  "plugins": [
+    {
+      "name": "fasterizy",
+      "description": "Speed up agent planning and docs. Same technical accuracy.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

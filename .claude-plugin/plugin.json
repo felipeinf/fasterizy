@@ -1,0 +1,35 @@
+{
+  "name": "fasterizy",
+  "version": "1.0.0",
+  "description": "Speed up agent planning, discussion, and docs without losing technical effectiveness. Code stays unchanged.",
+  "author": {
+    "name": "felipeinf",
+    "url": "https://github.com/felipeinf"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "HOOK_ROOT=$(echo \"${CLAUDE_PLUGIN_ROOT}\" | sed 's|^/\\([a-zA-Z]\\)/|\\1:/|'); node \"$HOOK_ROOT/hooks/activate.js\"",
+            "timeout": 5,
+            "statusMessage": "Loading fasterizy..."
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "HOOK_ROOT=$(echo \"${CLAUDE_PLUGIN_ROOT}\" | sed 's|^/\\([a-zA-Z]\\)/|\\1:/|'); node \"$HOOK_ROOT/hooks/tracker.js\"",
+            "timeout": 5,
+            "statusMessage": "Tracking fasterizy..."
+          }
+        ]
+      }
+    ]
+  }
+}
