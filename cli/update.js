@@ -1,6 +1,4 @@
 const { spawnSync } = require('child_process');
-const path = require('path');
-const fs = require('fs');
 const {
   REPO_SLUG,
   claudePluginCacheGlob,
@@ -19,7 +17,7 @@ function runNpxSkillsUpdate(agentFlag) {
 }
 
 module.exports = function update() {
-  console.log('Updating fasterizy from github.com/' + REPO_SLUG + ' (main)...\n');
+  console.log(`Updating fasterizy from github.com/${REPO_SLUG} (main)...\n`);
 
   const roots = defaultSearchRoots();
   const installs = findNpxSkillsInstalls(roots);
@@ -27,10 +25,10 @@ module.exports = function update() {
 
   const seen = new Set();
   for (const inst of installs) {
-    const key = inst.npxFlag + ':' + inst.root;
+    const key = `${inst.npxFlag}:${inst.root}`;
     if (seen.has(key)) continue;
     seen.add(key);
-    process.stdout.write(inst.id.padEnd(10) + inst.path + '  ');
+    process.stdout.write(`${inst.id.padEnd(10)}${inst.path}  `);
     if (runNpxSkillsUpdate(inst.npxFlag)) {
       console.log('[updated via npx skills]');
       auto++;
@@ -57,7 +55,7 @@ module.exports = function update() {
 
   console.log('');
   console.log(
-    'Done. ' + auto + ' path(s) refreshed via npx skills. Plugin installs need the agent UI.'
+    `Done. ${auto} path(s) refreshed via npx skills. Plugin installs need the agent UI.`
   );
   console.log('To update this CLI: npm update -g fasterizy');
 };

@@ -8,6 +8,14 @@ function packageRoot() {
   return path.join(__dirname, '..');
 }
 
+function claudeConfigDir() {
+  return process.env.CLAUDE_CONFIG_DIR || path.join(os.homedir(), '.claude');
+}
+
+function codexConfigDir() {
+  return process.env.CODEX_CONFIG_DIR || path.join(os.homedir(), '.codex');
+}
+
 function findPluginCacheDirs(baseName, markerRel) {
   const base = path.join(os.homedir(), baseName, 'plugins', 'cache');
   const found = [];
@@ -62,6 +70,11 @@ const NPX_AGENT_PATHS = [
   },
   { id: 'cursor', npxFlag: 'cursor', relPath: path.join('.cursor', 'rules', 'fasterizy.mdc') },
   {
+    id: 'cursor-skill',
+    npxFlag: 'cursor',
+    relPath: path.join('.cursor', 'skills', 'fasterizy', 'SKILL.md'),
+  },
+  {
     id: 'antigravity',
     npxFlag: 'antigravity',
     relPath: path.join('.gemini', 'antigravity', 'skills', 'fasterizy', 'SKILL.md'),
@@ -109,6 +122,8 @@ function defaultSearchRoots() {
 module.exports = {
   REPO_SLUG,
   packageRoot,
+  claudeConfigDir,
+  codexConfigDir,
   claudePluginCacheGlob,
   codexPluginCacheGlob,
   NPX_AGENT_PATHS,
