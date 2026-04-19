@@ -1,0 +1,10 @@
+.DS_Store
+*.tgz
+*.log
+.git/
+.github/
+node_modules/
+test/
+tests/
+__tests__/
+.vscode/

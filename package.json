@@ -1,7 +1,7 @@
 {
   "name": "fasterizy",
-  "version": "1.0.0",
-  "description": "Faster work with coding agents: shorter turns, Q&A/planning/docs.",
+  "version": "1.0.1",
+  "description": "Faster work with coding agents",
   "main": "cli.js",
   "bin": {
     "fasterizy": "./cli.js",
@@ -45,7 +45,7 @@
   "bugs": {
     "url": "https://github.com/felipeinf/fasterizy/issues"
   },
-  "homepage": "https://github.com/felipeinf/fasterizy#readme",
+  "homepage": "https://www.npmjs.com/package/fasterizy",
   "type": "commonjs",
   "dependencies": {
     "@inquirer/prompts": "^7.10.1"
