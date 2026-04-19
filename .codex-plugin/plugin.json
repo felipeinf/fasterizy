@@ -1,0 +1,37 @@
+{
+  "name": "fasterizy",
+  "version": "1.0.0",
+  "description": "Speed up agent planning, discussion, and docs without losing technical effectiveness. Code stays unchanged.",
+  "author": {
+    "name": "felipeinf",
+    "url": "https://github.com/felipeinf"
+  },
+  "homepage": "https://github.com/felipeinf/fasterizy",
+  "repository": "https://github.com/felipeinf/fasterizy",
+  "license": "MIT",
+  "keywords": [
+    "productivity",
+    "communication",
+    "brevity",
+    "writing"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Fasterizy",
+    "shortDescription": "Faster agent turns in planning and docs. Same technical accuracy.",
+    "longDescription": "Speed up work with AI coding agents without losing technical effectiveness. Applies to agent replies during discussion, planning, and Markdown documentation. Source code, commits, and line-by-line reviews stay unchanged. Fewer output tokens are a secondary benefit. Install hooks via `npx fasterizy install` or use the Codex plugin with hooks enabled.",
+    "developerName": "felipeinf",
+    "category": "Productivity",
+    "capabilities": [
+      "Write"
+    ],
+    "websiteURL": "https://github.com/felipeinf/fasterizy",
+    "privacyPolicyURL": "https://github.com/felipeinf/fasterizy/blob/main/README.md",
+    "termsOfServiceURL": "https://github.com/felipeinf/fasterizy/blob/main/LICENSE",
+    "defaultPrompt": [
+      "Use fasterizy: speed up planning, discussion, and docs. Keep technical accuracy. Code stays unchanged."
+    ],
+    "screenshots": [],
+    "brandColor": "#6B7280"
+  }
+}
