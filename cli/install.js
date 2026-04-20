@@ -96,7 +96,7 @@ const INSTALLERS = {
         lines.push('Stripped old fasterizy hook entries from settings.json.');
       }
       if (r.removedHookFiles && r.removedHookFiles.length) {
-        lines.push(`Removed ${r.removedHookFiles.length} legacy hook file(s) from ~/.claude/hooks/.`);
+        lines.push(`Removed ${r.removedHookFiles.length} legacy hook file(s) from ${path.join(cd, 'hooks')}.`);
       }
       lines.push('Restart Claude Code; fasterizy will load via the plugin.');
       return { label: 'Claude Code', lines };

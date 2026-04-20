@@ -11,7 +11,7 @@ Usage:
   npx fasterizy install           Interactive multi-agent install
   npx fasterizy install --agents opencode,openclaw,cursor
   npx fasterizy update            Refresh npx-skills installs from GitHub; print plugin update hints
-  npx fasterizy start             Enable runtime flag (~/.claude/.fasterizy-active)
+  npx fasterizy start             Enable runtime flag in the Claude config dir
   npx fasterizy stop              Disable runtime flag
   npx fasterizy status            Flag state, version, detected installs
   npx fasterizy promote-to-plugin Install fasterizy as native Claude Code plugin (visible in /plugin)

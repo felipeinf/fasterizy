@@ -85,7 +85,7 @@ Transition to state 2 only on explicit trigger: user says "write the plan" / "es
 
 Concrete and payload-first: paths, symbols, contracts, commands, what edits what. Do not omit anything the next agent needs cold. Cut only filler (intros, recaps). Density beats brevity when they conflict.
 
-### End-user docs (only when the user says so explicitly)
+### End-user docs (explicit request only)
 
 End-user documentation, public tutorials, marketing copy, or clearly customer-facing repos. Longer prose and narrative context allowed. Still strip hedges and pure filler; let introductions breathe.
 
