@@ -1,6 +1,6 @@
 {
   "name": "fasterizy",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Faster work with coding agents",
   "main": "cli.js",
   "bin": {
