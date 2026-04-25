@@ -16,6 +16,7 @@
     "skills/",
     ".claude-plugin/",
     ".codex-plugin/",
+    ".agents/",
     "README.md",
     "CHANGELOG.md",
     "LICENSE",

@@ -1,0 +1,20 @@
+{
+  "name": "fasterizy",
+  "interface": {
+    "displayName": "Fasterizy"
+  },
+  "plugins": [
+    {
+      "name": "fasterizy",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

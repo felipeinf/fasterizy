@@ -32,6 +32,8 @@ Replace `opencode` with your agent flag.
 
 **Codex**
 
+`npx fasterizy install --agents codex` only installs **hooks** under the Codex config (including `hooks.json` and `codex_hooks` in `config.toml`). It does not add a card to the Plugin directory. For that, use the commands below (requires this repo to include [`.agents/plugins/marketplace.json`](.agents/plugins/marketplace.json) on the branch you track). Restart Codex after any plugin or marketplace change.
+
 ```
 /plugin marketplace add felipeinf/fasterizy
 /plugin install fasterizy@fasterizy

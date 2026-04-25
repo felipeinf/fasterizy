@@ -124,8 +124,12 @@ const INSTALLERS = {
     return {
       label: 'Codex',
       lines: [
-        `hooks installed at ${path.join(cx, 'hooks')}, hooks.json patched`,
+        `Hooks installed: ${path.join(cx, 'hooks')}; patched ${path.join(cx, 'hooks.json')}.`,
         ...(r.backup ? [`backup: ${r.backup}`] : []),
+        'config: codex_hooks enabled in config.toml under the Codex config dir.',
+        'This is hook integration only. It will not add fasterizy to the Plugin directory.',
+        'To install the native plugin from chat: /plugin marketplace add felipeinf/fasterizy, then /plugin install fasterizy@fasterizy (use latest main on GitHub).',
+        'Restart Codex to reload hooks; restart again after a plugin install if needed.',
       ],
     };
   },
